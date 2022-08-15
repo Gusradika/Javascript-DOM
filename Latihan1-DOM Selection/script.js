@@ -45,3 +45,13 @@ li2.style.backgroundColor = "orange";
 
 const pp = document.querySelectorAll('p');
 p[2].style.backgroundColor = 'salmon';
+
+
+
+// Mengubah Root Node
+// Kita harus deklarasi Scope Root node-nya
+
+const sectionB = document.getElementById('b');
+const ppp = sectionB.getElementsByTagName('p');
+
+ppp[0].style.backgroundColor = "purple";
