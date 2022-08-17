@@ -68,3 +68,14 @@ secB.replaceChild(judul,judulBaru);
 pBaru.style.backgroundColor = "lightgreen";
 itemBaru.style.backgroundColor = "lightgreen";
 judul.style.backgroundColor = "lightgreen";
+
+//Manipulasi Node (Method baru)
+
+/*
+parentNode.append();
+parentNode.prepend();
+childNode.before();
+childNode.after();
+childNode.remove();
+childNode.replaceWith();
+*/
