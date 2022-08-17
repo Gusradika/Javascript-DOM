@@ -94,12 +94,14 @@ const p1 = document.querySelector(".p1");
 
 // EVENT LISTENER (NEW METHOD)
 
-p1.addEventListener("click", function() {
+p1.addEventListener("mouseenter", function() {
     p1.style.backgroundColor = "yellowgreen";
+    p1.style.color = "white";
 });
 
-p1.addEventListener("click", function() {
-    p1.style.color = "white";
+p1.addEventListener("mouseleave", function() {
+    p1.style.backgroundColor = "";
+    p1.style.color = "";
 });
 
 
@@ -107,18 +109,27 @@ p1.addEventListener("click", function() {
     EVENT LIST : https://www.w3schools.com/jsref/obj_events.asp
 
     - Mouse Event 
-        - click
-        - dblclick
+        - click         // On Click
+        - dblclick      // Double Click
         - mouseover
-        - mouseenter
+        - mouseenter    // Seperti Hover
+        - mouseleave    // ketika meninggalkan
         - mouseup
         - wheel
         - ...
     - Keyboard Event
+        - keydown
+        - keypress
+        - keyup
+        - ...
     - Resources event
     - focus event
     - View event
+        - resize
+        - scroll
     - form event
+        - reset
+        - submit
     - CSS animation & transition Event
     - Drag & drop event
     - Dll
