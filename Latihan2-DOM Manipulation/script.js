@@ -33,12 +33,18 @@ a.setAttribute("id","link");
 // Class List
 
 /* 
-element.classList.add();
-element.classList.remove();
-element.classList.toggle();
-element.classList.item();
-element.classList.contains();
-element.classList.replace();
+element.classList.add();        // Menambahkan
+element.classList.remove();     // Menghapus
+element.classList.toggle();     // Jika element tidak punya kelas tertentu maka di tambahkan, else di hapus
+seperti menyalakan lampu / Event.
+
+element.classList.item();       // mengetahui element apa yang ada di dalam element
+-> mengembalikan nilai index dari class
+
+element.classList.contains();   // Element memiliki class tertentu?
+-> mengembalikan nilai booleans
+
+element.classList.replace();     // Mengganti Class Element
 */
 
 const p2 = document.querySelector("div#container section#a p.p2");
