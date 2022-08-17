@@ -47,11 +47,13 @@ const pp = document.querySelectorAll('p');
 p[2].style.backgroundColor = 'salmon';
 
 
+//************************************************** */
+
 
 // Mengubah Root Node
 // Kita harus deklarasi Scope Root node-nya
 
 const sectionB = document.getElementById('b');
-const ppp = sectionB.getElementsByTagName('p');
+const ppp = sectionB.getElementsByTagName('p')[0];
 
-ppp[0].style.backgroundColor = "purple";
+ppp.style.backgroundColor = "purple";
