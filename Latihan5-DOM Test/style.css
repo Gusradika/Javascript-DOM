@@ -1,69 +1,200 @@
 * {
-    border: 0.1px black solid;
+    box-sizing: border-box;
 }
 
 body {
     margin: 0;
-
+    height: 900px;
     font-family: Arial, Helvetica, sans-serif;
+    color: #333;
 }
 
-section#a {
-    width: 90%;
+h3 {
+    margin: 0;
+}
+
+.container {
     margin: auto auto;
-    position: relative;
-}
-
-h1 {
-    text-align: center;
-    margin: 0px 0px;
-    font-size: 50px;
-}
-
-.kotakWarna {
-    height: 200px;
-}
-
-
-.buttonContainer {
+    width: 1800px;
+    border: 1px black ;
     
 }
 
-.center {
-    margin: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+.box {
+    padding: 1%;
+    width:500px;
+    border: 1px black ;
+    float: left;
+    background-color: #f7f7f7;
 }
 
-div.buttonContainer button {
+.box2 {
+    padding: 1%;
+    width: 500px;
+    border: 1px black ;
+    background-color: #f7f7f7;
+    float: left;
+}
+
+.box3 {
+    padding: 1%;
+    width: 750px;
+    border: 1px black ;
+    background-color: #f7f7f7;
+    float: left;
+}
+
+.box button, .box2 button{
     margin-right: 10px;
+    margin-bottom: 20px;
     padding: 10px;
-    color: white;
-    background-color: salmon;
-    border: 5px solid grey;
     border-radius: 50px;
-
+    border: 3px white solid;
 }
 
-div.buttonContainer button:hover {
-    background-color: salmon;
-    border: 5px solid white;
+button:hover {
+    border: 3px cyan solid;
+    cursor: pointer;
+}
+
+
+button.resetColor:hover {
+    border: 3px cyan solid;
+    cursor: pointer;
+}
+
+
+
+.boxRed {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    float: left;
+    margin-right: 20px;
+}
+
+.boxGreen {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    float: left;
+    margin-right: 20px;
+    
+}
+
+.boxBlue {
+    height: 100px;
+    width: 100px;
+    background-color: Blue;
+    float: left;
+    margin-right: 20px;
+}
+
+.mBoxRed, .mBoxGreen, .mBoxBlue {
+    line-height: 30px;
+    margin-bottom: 100px;
+    width: 500px;
+    border: 1px yellow ;
+}
+
+
+
+.box3Container {
+    margin: auto auto;
+    width: 500px;
+    border: 1px  red;
+}
+
+button.resetColor {
+    position: relative;
+    top: -50px;
+    padding: 1%;
+    width: 100%;
+    border: 3px white  solid;
+}
+
+.clear {
+    clear: both;
+}
+
+
+.slider:hover {
+    opacity: 1;
+}
+
+.boxContainerAll{
+    margin-left: 20px;
+    border: red 2px ;
+}
+
+.content {
+    width: 100%;
+    border: blue 2px ;
+}
+
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /* Override default look */
+    appearance: none;
+    width: 25px;
+    /* Set a specific slider handle width */
+    height: 25px;
+    border-radius: 100px;
+    /* Slider handle height */
+    background: #333;
+    /* Green background */
+    cursor: pointer;
+    /* Cursor on hover */
+}
+
+.slider {
+    -webkit-appearance: none;
+    /* Override default CSS styles */
+    appearance: none;
+    width: 50%;
+    /* Full-width */
+    border-radius: 50px;
+    height: 12px;
+    /* Specified height */
+    background: #d3d3d3;
+    /* Grey background */
+    outline: none;
+    /* Remove outline */
+    opacity: 0.7;
+    /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s;
+    /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+
+/*  ==================================================================
+
+*/
+
+.judul {
+    line-height: 100px;
+    margin-left: 45%;
+}
+
+.content{
+    height: 900px;
+}
+.copyright {
+    line-height: 60px;
+    height: 30px;
+    width: 100%;
+    background-color: #333;
     color: white;
+    text-align: center;
 }
 
-div.buttonContainer button:active {
-    background-color: yellowgreen;
-    color: white;
+body {
+    background-color: #333;
 }
 
-.whiteText {
-    color: white;
+.container {
+    margin-top: -16px;
+    background-color: white;
 }
-
-.blackText {
-    color: black;
-}
-

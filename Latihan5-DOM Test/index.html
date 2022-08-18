@@ -4,29 +4,82 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Latihan DOM</title>
+  <title>Color Windows</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <section id="a">
-    <div class="header">
-        <h1 class="blackText">Bermain dengan warna</h1>
+  <div class="container">
+    <div class="judul">
+      <h1>Color Windows</h1>
     </div>
-    <div class="kotakWarna">
-        <div class="buttonContainer center">
-        <ul>
-          <button class="defaultButton">Warna Default</button>
-          <button class="redButton">Warna Merah</button>
-          <button class="yellowButton">Warna Kuning</button>
-          <button class="blueButton">Warna Biru</button>
-          <button class="greenButton">Warna Hijau</button>
-          <button class="acakButton">Acak Warna</button>
-        </ul>
-      </div>
+    
+    <div class="content">
+      <div class="boxContainerAll">
+            <div class="box">
+            <h2>Defined Color</h2>
+            <button class="default">Default Color</button>
+            <button class="wCyan">Cyan Color</button>
+            <button class="wMagenta">Magenta Color</button>
+            <button class="wYellow">Yellow Color</button>
+            <button class="wBlack">Black Color</button>
+          </div>
+
+          <div class="box2">
+            <h2>Randomized Color</h2>
+            <button class="rDef">Randomize Default Color!</button>
+            <button class="rColor">Randomize Color!</button>
+          </div>
+
+          <div class="box3">
+
+            <div class="box3Container">
+                <h2>Color Slider</h2>
+
+              <!-- Box Line Untuk Red -->
+              <div class="mBoxRed">
+                <div class="boxRed"></div>
+                <div class="text">
+                  <h3>Red Color</h3>
+                  <br><input type="range" min="0" max="256" value="0" class="slider" id="red">
+                </div>
+              </div>
+              
+              <!-- Box Line Untuk Red -->
+              <div class="mBoxGreen">
+                <div class="boxGreen"></div>
+                <div class="text">
+                  <h3>Green Color</h3>
+                  <br><input type="range" min="0" max="256" value="0" class="slider" id="green">
+                </div>
+              </div>
+              
+              <!-- Box Line Untuk Red -->
+              <div class="mBoxBlue">
+                <div class="boxBlue"></div>
+                <div class="text">
+                  <h3>Blue Color</h3>
+                  <br><input type="range" min="0" max="256" value="0" class="slider" id="blue">
+                </div>
+              </div>
+
+              <button class="resetColor">Reset Color</button>
+            </div>
+          </div>
+
+          <div class="clear"></div>
+
+        </div>  <!-- Last Box Container -->
+    </div>  <!-- Content-->
+
+    <div class="copyright">
+      <p>Copyright @2022. Color Windows</p>
     </div>
 
-  </section>
+  </div> <!-- Last Container-->
 
-    <script src="script.js"></script>
+  
+    
+  <script src="script.js"></script>
+
 </body>
 </html>

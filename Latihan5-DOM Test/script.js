@@ -1,96 +1,78 @@
+const wDefault = document.querySelector(".default");
+const wCyan = document.querySelector(".wCyan");
+const wMagenta = document.querySelector(".wMagenta");
+const wYellow = document.querySelector(".wYellow");
+const wBlack = document.querySelector(".wBlack");
 
-const sectionA = document.getElementById("a");
+const rRandom = document.querySelector(".rDef");
+const rColor = document.querySelector(".rColor");
 
-const defaultButton = sectionA.querySelector(".defaultButton");
-const redButton = sectionA.querySelector(".redButton");
-const yellowButton = sectionA.querySelector(".yellowButton");
-const blueButton = sectionA.querySelector(".blueButton");
-const greenButton = sectionA.querySelector(".greenButton");
-const acakButton = sectionA.querySelector(".acakButton");
+const container = document.querySelector(".container");
 
-const color = ["white", "red", "Yellow", "Blue", "Green"];
+wDefault.addEventListener("click", defaultColor);
 
-const headerText = sectionA.querySelector("h1");
+function defaultColor() {
+    container.style.backgroundColor = "white";
+    console.log("White");
+};
 
-defaultButton.addEventListener("click", function() {
-    document.body.style.backgroundColor = "white";
-    headerText.classList.replace("whiteText", "blackText");
-    alert("Background changed to " + color[0]);
-});
+wCyan.addEventListener("click", cyanColor);
 
-redButton.addEventListener("click", function() {
-    document.body.style.backgroundColor = "red";
-    headerText.classList.replace("blackText", "whiteText");
-    alert("Background changed to " + color[1]);
-});
-
-yellowButton.addEventListener("click", function() {
-    document.body.style.backgroundColor = "yellowgreen";
-    headerText.classList.replace("blackText", "whiteText");
-    alert("Background changed to " + color[2]);
-});
-
-blueButton.addEventListener("click", function() {
-    document.body.style.backgroundColor = "lightskyblue";
-    headerText.classList.replace("blackText", "whiteText");
-    alert("Background changed to " + color[3]);
-});
-
-greenButton.addEventListener("click", function() {
-    document.body.style.backgroundColor = "green";
-    headerText.classList.replace("blackText", "whiteText");
-    alert("Background changed to " + color[4]);
-});
-
-acakButton.addEventListener("click", warnaAcak);
-
-
-// ---------------------------------------
-function red() {
-    document.body.style.backgroundColor = "red";
-    headerText.classList.replace("blackText", "whiteText");
-    alert("Background changed to " + color[1]);
+function cyanColor() {
+    container.style.backgroundColor = "cyan";
+    console.log("Cyan");
 }
 
-function yellow() {
-    document.body.style.backgroundColor = "yellowgreen";
-    headerText.classList.replace("blackText", "whiteText");
-    alert("Background changed to " + color[2]);
+wMagenta.addEventListener("click",magentaColor);
+
+function magentaColor() {
+    container.style.backgroundColor = "magenta";
+    console.log("magenta");
 }
 
-function blue() {
-     document.body.style.backgroundColor = "lightskyblue";
-    headerText.classList.replace("blackText", "whiteText");
-    alert("Background changed to " + color[3]);
+wYellow.addEventListener("click",yellowColor);
+
+function yellowColor() {
+    container.style.backgroundColor = "yellowgreen";
+    console.log("yellow");
 }
 
-function green(){
-      document.body.style.backgroundColor = "green";
-    headerText.classList.replace("blackText", "whiteText");
-    alert("Background changed to " + color[4]);
+wBlack.addEventListener("click",blackColor);
+
+function blackColor(){
+    container.style.backgroundColor = "#3333";
+    console.log("black");
 }
 
+// ----------------------------------
 
-var a = 0;
+rColor.addEventListener("click",function() {
+    container.style.backgroundColor = "rgb(" + (Math.floor(Math.random() * 257)) + ","  + (Math.floor(Math.random() * 257)) + "," + (Math.floor(Math.random() * 257))  + ")"
+});
 
-function warnaAcak() {
+// ------------------------------------
 
-    
-    a = Math.floor(Math.random() * 4);
-    alert(a);
+rRandom.addEventListener("click", function() {
+    var a = Math.floor(Math.random() * 4);
+    console.log(a);
     if(a == 0){
-        red();
+        cyanColor();
     }if(a == 1){
-        yellow();
+        magentaColor();
     }if(a == 2){
-        blue();
+        yellowColor();
     }if(a == 3){
-        green();
+        blackColor();
+    }if( a >= 4 || a < 0){
+        defaultColor();
     }
-}
+});
 
+//-------------------------------
 
+var red = document.getElementById("red").value;
+var green =document.getElementById("green").value;
+var blue = document.getElementById("blue").value;
 
-
-
-
+var defaultValRed = red.defaultValue;
+var r = red.value;
