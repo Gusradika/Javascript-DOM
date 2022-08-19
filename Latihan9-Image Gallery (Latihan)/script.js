@@ -7,8 +7,8 @@ img.forEach(function (e, i){
         x.target.style.opacity = 0.5;
         x.target.style.cursor = "pointer";
         e.addEventListener("click",function(){
-            heroImg.setAttribute("src", x.target.src);
-            imgText.innerHTML = "Image " + (i+1);
+        heroImg.setAttribute("src", x.target.src);
+        imgText.innerHTML = "Image " + (i+1);
         })
     });
 });
