@@ -70,9 +70,39 @@ rRandom.addEventListener("click", function() {
 
 //-------------------------------
 
-var red = document.getElementById("red").value;
-var green =document.getElementById("green").value;
-var blue = document.getElementById("blue").value;
+var red = document.getElementById("red");
+var green =document.getElementById("green");
+var blue = document.getElementById("blue");
 
-var defaultValRed = red.defaultValue;
-var r = red.value;
+var r = 256;
+var g = 256;
+var b = 256;
+
+red.addEventListener("change", function() {
+     r = red.value;
+    container.style.backgroundColor = "rgb(" + r + ","+ g + "," + b + ")";
+});
+
+green.addEventListener("change", function() {
+     g = green.value;
+    container.style.backgroundColor = "rgb(" + r + ","+ g + "," + b + ")";
+});
+
+blue.addEventListener("change", function() {
+     b = blue.value;
+    container.style.backgroundColor = "rgb(" + r + ","+ g + "," + b + ")";
+});
+
+const resetColor = document.querySelector(".resetColor");
+
+resetColor.addEventListener("click", function() {
+    red.value = 256;
+    green.value = 256;
+    blue.value = 256;
+    r = red.value;
+    g = green.value;
+    b = blue.value;
+    container.style.backgroundColor = "rgb(" + r + ","+ g + "," + b + ")";
+    
+
+});
